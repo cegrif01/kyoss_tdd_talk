@@ -1,43 +1,22 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "kyoss_tdd_talk",
+	"description": "An easy to understand guide to test driven development.",
+	
 	"require": {
-		"laravel/framework": "4.0.*",
-		"laravelbook/ardent": "dev-master",
-		"nesbot/Carbon": "*",
+		
 	},
 	"require-dev": {
-		"codeception/codeception": "1.6.*@dev",
-		"way/generators": "dev-master",
-		"mockery/mockery": "dev-master@dev",
- 	   	"way/laravel-test-helpers": "dev-master",
- 	   	"fzaninotto/faker": "1.2.*@dev",
- 	   	"squizlabs/php_codesniffer": "*",
- 	   	"fabpot/php-cs-fixer": "*",
- 	   	"phpmd/phpmd": "*"
+		"phpunit/phpunit": "3.8.*@dev",
+		"mockery/mockery": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
-            "vendor/illuminate/remote"
+			"tests"
+			
 		],
 		"psr-0": {
-            "Indatus": "app/lib"
+            
         }
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan optimize"
-		],
-		"pre-update-cmd": [
-			"php artisan clear-compiled"
-		],
-		"post-update-cmd": [
-			"php artisan optimize"
-		],
-		"post-create-project-cmd": [
-			"php artisan key:generate"
-		]
 	},
 	"config": {
 		"preferred-install": "dist"
