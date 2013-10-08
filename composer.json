@@ -11,7 +11,8 @@
 	},
 	"autoload": {
 		"classmap": [
-			"tests"
+			"tests",
+			"math.php"
 			
 		],
 		"psr-0": {
