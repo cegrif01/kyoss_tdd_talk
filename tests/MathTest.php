@@ -9,4 +9,10 @@ class MathTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals(8, $answer);
 	}
 
+	public function testInstanceOfMathClass()
+	{
+		$math = new Math;
+		$this->assertInstanceOf('Math', $math);
+	}
+
 }
