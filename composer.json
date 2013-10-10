@@ -12,7 +12,7 @@
 	"autoload": {
 		"classmap": [
 			"tests",
-			"math.php"
+			"app"
 			
 		],
 		"psr-0": {
